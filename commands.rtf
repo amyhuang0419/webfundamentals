@@ -1,0 +1,165 @@
+{\rtf1\ansi\ansicpg936\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red202\green51\blue35;\red57\green192\blue38;
+\red170\green171\blue37;\red56\green185\blue199;}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c83898\c28665\c18024;\cssrgb\c25704\c77963\c19556;
+\cssrgb\c72330\c71683\c18597;\cssrgb\c25544\c77008\c82022;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 Last login: Thu Jul  1 20:51:49 on ttys001\
+jiadeMacBook-Pro:~ JiaBao$ cd desktop\
+jiadeMacBook-Pro:desktop JiaBao$ mkdir test_1\
+jiadeMacBook-Pro:desktop JiaBao$ cd test_1\
+jiadeMacBook-Pro:test_1 JiaBao$ touch index.html\
+jiadeMacBook-Pro:test_1 JiaBao$ touch styles.css\
+jiadeMacBook-Pro:test_1 JiaBao$ git init\
+Initialized empty Git repository in /Users/JiaBao/Desktop/test_1/.git/\
+jiadeMacBook-Pro:test_1 JiaBao$ ls -la\
+total 0\
+drwxr-xr-x   5 JiaBao  staff   160 Jul  1 21:00 .\
+drwx------+ 81 JiaBao  staff  2592 Jul  1 20:59 ..\
+drwxr-xr-x   9 JiaBao  staff   288 Jul  1 21:00 .git\
+-rw-r--r--   1 JiaBao  staff     0 Jul  1 20:59 index.html\
+-rw-r--r--   1 JiaBao  staff     0 Jul  1 21:00 styles.css\
+jiadeMacBook-Pro:test_1 JiaBao$ git status\
+On branch master\
+\
+No commits yet\
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+\
+	\cf3 index.html\cf2 \
+	\cf3 styles.css\cf2 \
+\
+nothing added to commit but untracked files present (use "git add" to track)\
+jiadeMacBook-Pro:test_1 JiaBao$ git add.\
+git: 'add.' is not a git command. See 'git --help'.\
+\
+The most similar command is\
+	add\
+jiadeMacBook-Pro:test_1 JiaBao$ git add .\
+jiadeMacBook-Pro:test_1 JiaBao$ git status\
+On branch master\
+\
+No commits yet\
+\
+Changes to be committed:\
+  (use "git rm --cached <file>..." to unstage)\
+\
+	\cf4 new file:   index.html\cf2 \
+	\cf4 new file:   styles.css\cf2 \
+\
+jiadeMacBook-Pro:test_1 JiaBao$ git status\
+On branch master\
+\
+No commits yet\
+\
+Changes to be committed:\
+  (use "git rm --cached <file>..." to unstage)\
+\
+	\cf4 new file:   index.html\cf2 \
+	\cf4 new file:   styles.css\cf2 \
+\
+jiadeMacBook-Pro:test_1 JiaBao$ git commit -m "First Commit"\
+[master (root-commit) 91f7cc7] First Commit\
+ 2 files changed, 15 insertions(+)\
+ create mode 100644 index.html\
+ create mode 100644 styles.css\
+jiadeMacBook-Pro:test_1 JiaBao$ git status\
+On branch master\
+nothing to commit, working tree clean\
+jiadeMacBook-Pro:test_1 JiaBao$ git log\
+\cf5 commit 91f7cc742d4dd979fb864ddcf6a1b57f60cc3979 (
+\f1\b \cf6 HEAD -> \cf4 master
+\f0\b0 \cf5 )\cf2 \
+Author: Guangyu Huang <huangeho@gmail.com>\
+Date:   Thu Jul 1 21:02:46 2021 -0700\
+\
+    First Commit\
+jiadeMacBook-Pro:test_1 JiaBao$ git status\
+On branch master\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf3 modified:   index.html\cf2 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+jiadeMacBook-Pro:test_1 JiaBao$ git add .\
+jiadeMacBook-Pro:test_1 JiaBao$ git status\
+On branch master\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf4 modified:   index.html\cf2 \
+\
+jiadeMacBook-Pro:test_1 JiaBao$ git commit -m "Update HTML"\
+[master 8ec4ecc] Update HTML\
+ 1 file changed, 1 insertion(+)\
+jiadeMacBook-Pro:test_1 JiaBao$ git status\
+On branch master\
+nothing to commit, working tree clean\
+jiadeMacBook-Pro:test_1 JiaBao$ git log\
+\cf5 commit 8ec4eccbec73a1195361f71f51f10ab76bd8dbf0 (
+\f1\b \cf6 HEAD -> \cf4 master
+\f0\b0 \cf5 )\cf2 \
+Author: Guangyu Huang <huangeho@gmail.com>\
+Date:   Thu Jul 1 21:05:59 2021 -0700\
+\
+    Update HTML\
+\
+\cf5 commit 91f7cc742d4dd979fb864ddcf6a1b57f60cc3979\cf2 \
+Author: Guangyu Huang <huangeho@gmail.com>\
+Date:   Thu Jul 1 21:02:46 2021 -0700\
+\
+    First Commit\
+jiadeMacBook-Pro:test_1 JiaBao$ git status\
+On branch master\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf3 modified:   styles.css\cf2 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+jiadeMacBook-Pro:test_1 JiaBao$ git add .\
+jiadeMacBook-Pro:test_1 JiaBao$ git status\
+On branch master\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf4 modified:   styles.css\cf2 \
+\
+jiadeMacBook-Pro:test_1 JiaBao$ git commit -m "Update CSS"\
+[master ecafabf] Update CSS\
+ 1 file changed, 3 insertions(+)\
+jiadeMacBook-Pro:test_1 JiaBao$ git status\
+On branch master\
+nothing to commit, working tree clean\
+jiadeMacBook-Pro:test_1 JiaBao$ git log\
+\cf5 commit ecafabf5095dac8606859ef117e8c7451668e37b (
+\f1\b \cf6 HEAD -> \cf4 master
+\f0\b0 \cf5 )\cf2 \
+Author: Guangyu Huang <huangeho@gmail.com>\
+Date:   Thu Jul 1 21:07:23 2021 -0700\
+\
+    Update CSS\
+\
+\cf5 commit 8ec4eccbec73a1195361f71f51f10ab76bd8dbf0\cf2 \
+Author: Guangyu Huang <huangeho@gmail.com>\
+Date:   Thu Jul 1 21:05:59 2021 -0700\
+\
+    Update HTML\
+\
+\cf5 commit 91f7cc742d4dd979fb864ddcf6a1b57f60cc3979\cf2 \
+Author: Guangyu Huang <huangeho@gmail.com>\
+Date:   Thu Jul 1 21:02:46 2021 -0700\
+\
+    First Commit\
+jiadeMacBook-Pro:test_1 JiaBao$ git revert ecafabf5095da\
+[master b41aa40] Revert "Update CSS"\
+ 1 file changed, 3 deletions(-)\
+jiadeMacBook-Pro:test_1 JiaBao$ \
+}
